@@ -1,0 +1,182 @@
+.travel-container{
+    display: flex;
+    font-family: 'Nanum Gothic', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px 0;
+    flex-wrap: wrap;
+}
+
+.travel{
+    flex: 0 1 calc(80%);
+    background-color: white;
+    border-radius: 35px;
+    display: flex;
+}
+
+.travel-time{
+    flex: 1 0 calc(15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #B6ACAC;
+}
+
+.journey{
+    flex: 1 0 calc(35%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: #636C78;
+    padding: 1em;
+}
+
+.journey .icon-location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EC7C13;
+    font-size: 25px;
+    flex: 1 0 calc(20%);
+}
+
+.journey .travel-journey{
+    flex: 1 0 calc(80%);
+}
+
+.journey .travel-journey .icon-angle{
+    color: #EC7C13;
+    font-size: 25px;
+}
+
+.travel-price{
+    flex: 1 0 calc(50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.travel-price .icon-truck{
+    font-size: 50px;
+    color: #636C78;
+    transform: scaleX(-1);
+}
+
+.travel-price .quantity{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.quantity{
+    background-color: #D33333;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.travel-price .price{
+    font-size: 25px;
+    color: #636C78;
+}
+
+.travel-price .icon-options{
+    font-size: 25px;
+    color: #636C78;
+}
+
+@media screen and (min-width: 360px){
+    .journey{
+        font-size: 12px;
+    }
+    .ok{
+        display: none;
+    }
+    .travel-time{
+        display: none;
+    }
+    .travel-container{
+        justify-content: center;
+    }
+    .app-plus{
+        display: none;
+    }
+    .journey .icon-location{
+        display: none;
+    }
+    .travel-price .icon-truck{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 680px){
+    .travel-container{
+        justify-content: space-between;
+    }
+    .ok{
+        display: block;
+    }
+    .travel-price{
+        display: flex;
+    }
+    .travel-read-more button{
+        display: none;
+    }
+    .app-plus{
+        position: relative;
+        left: -25px;
+        top: 40px;
+    }
+    .journey .icon-location{
+        display: flex;
+    }
+    .travel-price .icon-truck{
+        display: block;
+    }
+}
+
+.icon-options button{
+    background-color: transparent;
+    border: none;
+    color: #636C78;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: #636C78;
+    display: flex;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.dropdown-content a .icon{
+    margin: 0 5px 0 0;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1;}

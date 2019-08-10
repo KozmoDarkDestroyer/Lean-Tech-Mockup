@@ -1,0 +1,24 @@
+.input-search{
+    height: 35px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    outline: none;
+    border: 1px solid #aaa;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #aaa;
+    margin: 0 0 15px 0;
+}
+
+.search{
+    max-width: 300px;
+    position: relative;
+}
+
+.search i{
+    position: absolute;
+    left: 100px;
+    top: 13px;
+    color: #aaa;
+}

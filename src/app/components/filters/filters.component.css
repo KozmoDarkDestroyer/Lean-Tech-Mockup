@@ -1,0 +1,54 @@
+.filter{
+    display: flex;
+    max-width: 300px;
+    margin: 0 0 15px 0;
+}
+
+.icon-filter{
+    font-size: 50px;
+    color: #636C78;
+    margin: 0 50px 0 0;
+}
+
+.container-switch{
+    height: 50px;
+    width: 100px;
+    background-color: #062E43;
+    border-radius: 45px;
+}
+
+.sphere{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.sphere:hover{
+    cursor: pointer;
+}
+
+.move-left{
+    position: relative;
+    animation-name: left;
+    animation-duration: 4s; 
+    left: 50px;
+}
+
+.move-right{
+    position: relative;
+    left: 50px;
+    animation-name: right;
+    animation-duration: 4s; 
+    left: 0px; 
+}
+
+@keyframes left {
+    0%   {left:0px;}
+    25%  {left:50px;}
+}
+
+@keyframes right {
+    0% {left: 50px}
+    25%{left: 0px;}
+}

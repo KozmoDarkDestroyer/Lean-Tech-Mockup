@@ -1,0 +1,59 @@
+<nav (window:resize)="onResize($event)">
+    <div class="collapse">
+        <button class="menu" (click)="collapseMenu(collapse = !collapse)">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <ul [style.display]=display>
+        <li>
+            <a [routerLink]="['home']">
+                <div class="icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="text">
+                    Home
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="text">
+                    Messages
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="text">
+                    Wishlist
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="text">
+                    Settings
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="text">
+                    My account
+                </div>
+            </a>
+        </li>
+    </ul>
+</nav>   

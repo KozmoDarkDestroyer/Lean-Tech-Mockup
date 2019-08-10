@@ -1,0 +1,68 @@
+<div class="travel-container">
+    <app-ok class="ok"></app-ok>
+    <div class="travel">
+        <div class="travel-time">
+                <p>{{ travel.time.day }}</p>
+                <p>{{ travel.time.hour }}</p>
+                <p>{{ travel.time.period }}</p>
+        </div>
+        <div class="journey">
+            <div class="icon-location">
+                <i class="fas fa-location-arrow"></i>
+            </div>
+            <div class="travel-journey">
+                <p>{{ travel.iniTravel }}</p>
+                <div class="icon-angle">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p>{{ travel.endTravel }}</p>
+            </div>
+        </div>
+        <div class="travel-price">
+            <div class="icon-truck">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div class="price">
+                <p>{{ travel.price | currency }}</p>
+            </div>
+            <div class="quantity">
+                <p>{{ travel.quantity }}</p>
+            </div>
+            <div class="icon-options dropdown">
+                <button class="dropbtn" (click)="options( State = !State )">
+                    <span><i class="fas fa-ellipsis-v"></i></span>
+                </button>
+                <div class="dropdown-content"
+                     [style.display]=Dropdown>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="text">
+                            Option #1
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="text">
+                            Option #2
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="text">
+                            Option #3
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="app-plus">
+            <app-plus *ngIf="i == travelLenght-1"></app-plus>
+        </div>
+    </div>
+</div>

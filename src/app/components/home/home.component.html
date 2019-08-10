@@ -1,0 +1,36 @@
+<div class="home-container">
+    <div class="home-filters">
+        <div class="home-smart-filter">
+            <app-smart-filters></app-smart-filters>
+        </div>
+        <div class="filters-group">
+            <div class="home-filter">
+                <app-filters [icon]='IconSales'></app-filters>
+            </div>
+            <div class="home-filter">
+                <app-filters [icon]='IconHeart'></app-filters>
+            </div>
+            <div class="home-filter">
+                <app-filters [icon]='IconCalendar'></app-filters>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="home-status">
+            <span>Status</span>
+        </div>
+        <div class="filter-search">
+            <app-search></app-search>
+        </div>
+        <div class="home-delivered">
+            <app-delivered></app-delivered>
+        </div>
+    </div>
+    <div class="home-body">
+        <div class="home-search">
+            <app-search></app-search>
+        </div>
+        <div class="home-travel">
+            <app-travels class="app-travel" [travelLenght]="TravelLength" [i]="i" [travel]="travel" *ngFor="let travel of Travels; let i= index"></app-travels>
+        </div>
+    </div>
+</div>
